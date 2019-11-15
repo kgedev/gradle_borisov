@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jugru.TestService" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-15T10:50:19" hostname="gkdev" time="0.004">
+  <properties/>
+  <testcase name="testMsg" classname="jugru.TestService" time="0.004"/>
+  <system-out><![CDATA[MESSAGE 2 B || ! 2 B
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

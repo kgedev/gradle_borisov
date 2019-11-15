@@ -1,0 +1,24 @@
+apply plugin : 'java'
+
+task runTest(type: JavaExec, dependsOn: test){
+	main = 'jugru.IntegrationTest'
+	classpath sourceSets.test.runtimeClasspath
+}
+
+task sendMail(type:mail.MailTask) {
+	to = recipientMail
+}
+
+check.dependsOn.add(runTest)
+
+test {
+	testLogging.showStandardStreams = true
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile 'junit:junit:4.11'
+}
